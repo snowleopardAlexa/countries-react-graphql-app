@@ -10,7 +10,7 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client'
 // apollo will memorize the query that's why we use cache inmemorycache 
 const client = new ApolloClient ({
   uri: "https://countries.trevorblades.com/graphql",
-  cache: InMemoryCache
+  cache: new InMemoryCache()
 })
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
